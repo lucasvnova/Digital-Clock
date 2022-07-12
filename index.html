@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> 
+
+    <div class="container">
+
+        <div>
+            <p id="horas">00</p>
+            <p class="tempo">Horas</p>
+        </div>
+
+        <div>
+            <p id="minutos">00</p>
+            <p class="tempo">Minutos</p>
+        </div>
+
+        <div>
+            <p id="segundos">00</p>
+            <p class="tempo">Segundos</p>
+        </div>
+
+    </div>
+
+    <script>
+        const horas = document.getElementById("horas")
+        const minutos = document.getElementById("minutos")
+        const segundos = document.getElementById("segundos")
+
+const relogio = setInterval(function time() {
+
+    const dateToday = new Date();
+    const hr = dateToday.getHours()
+    const min =dateToday.getMinutes()
+    const seg = dateToday.getSeconds()
+
+    if (hr <10)  {
+        horas.innerHTML = "0"+hr
+    }
+    else {
+    horas.innerHTML =hr
+    }
+    if (min <10) {
+    minutos.innerHTML = "0"+min
+    }
+    else {
+    minutos.innerHTML = min
+    }
+    if(seg<10)  {
+        segundos.innerHTML = "0"+seg
+    }
+    else {
+    segundos.innerHTML = seg
+    }
+    
+})
+    </script>
+
+    
+</body>
+</html>

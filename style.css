@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    background: linear-gradient(135deg, rgb(214, 214, 34) 20%, rgb(232, 67, 67) 90%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .titulo {
+    display: flex;
+    margin-bottom: 50px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: auto;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container div {
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+    flex-direction: column;  
+}
+
+.container div #horas {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.container div #minutos {
+    font-size: 50px;
+    padding: 10px;
+}
+
+.container div #segundos {
+    font-size: 50px;
+    padding: 10px;
+}
+
+
